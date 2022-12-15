@@ -12,12 +12,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-n=*n70=8l!-=xd#^$v7a&&1@06)%olatsdrxd7vch_%ro@e%#3'
+SECRET_KEY = os.environ.get('SECRET_KEY, django-insecure-n=*n70=8l!-=xd#^$v7a&&1@06)%olatsdrxd7vch_%ro@e%#3')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['qburn93-django-todo-app.herokuapp.com']
+ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
 
 # Application definition
